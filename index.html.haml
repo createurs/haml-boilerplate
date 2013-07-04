@@ -71,3 +71,9 @@
       %script{:src => "js/bootstrap-collapse.js"}
       %script{:src => "js/bootstrap-carousel.js"}
       %script{:src => "js/bootstrap-typeahead.js"}
+
+      / Selectivizr conditional - Needs to come after jQuery core.
+      /[if (gte IE 6)&(lte IE 8)]
+        <script type="text/javascript" src="js/selectivizr.js"></script>
+        <noscript><link rel="stylesheet" href="#" /></noscript>
+
