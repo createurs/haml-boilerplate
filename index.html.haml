@@ -1,0 +1,74 @@
+!!! 5
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title HAML Bootstrap Boilerplate
+    %meta{:name => "viewport", :content => "width=device-width, inital-scale=1.0"}/ 
+    %meta{:content => "", :name => "Description for the site goes here."}/
+    %meta{:content => "", :name => "Mark Kemp / Bodog Olah - Createur"}/
+    / HTML5 shim, for IE6-8 support of HTML elements
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    / Styles
+    %link{:href => "css/compiled.css", :rel => "stylesheet"}/
+
+    %link{:href => "images/favicon.ico", :rel => "shortcut icon"}/
+    %link{:href => "images/apple-touch-icon.png", :rel => "apple-touch-icon"}/
+    %link{:href => "images/apple-touch-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}/
+    %link{:href => "images/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}/
+
+  %body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .row
+          .span12
+            .navbar-inner
+              .container
+                %button{:type => "button", :class => "btn btn-navbar", :data => {:toggle =>"collapse", :target => ".nav-collapse"}}
+                  %span.icon-bar
+                  %span.icon-bar
+                  %span.icon-bar
+                %a{:href => "#", :class => "brand"}
+                  Logo 
+                %nav{:class => "nav-collapse collapse"}
+                  %ul.nav
+                    %li.active
+                      %a{:href => "#"} Home
+                    %li
+                      %a{:href => "#about"} About
+                    %li
+                      %a{:href => "#contact"} Contact
+
+    .wrapper
+      .container
+        .row
+          .span12
+            %h1 Start coding something
+
+      .footer
+        .container
+          .row
+            .span12
+              %nav 
+                %ul.unstyled
+                  %li.active
+                    %a{:href => "#"} Home
+                  %li
+                    %a{:href => "#about"} About
+                  %li
+                    %a{:href => "#contact"} Contact
+
+
+      / Include scripts before closing body tag
+      %script{:type => "text/javascript", :src => "js/jquery.js"}
+      %script{:type => "text/javascript", :src => "js/bootstrap-transition.js"}
+      %script{:type => "text/javascript", :src => "js/bootstrap-alert.js"}
+      %script{:type => "text/javascript", :src => "js/bootstrap-modal.js"}
+      %script{:type => "text/javascript", :src => "js/bootstrap-scrollspy.js"}
+      %script{:type => "text/javascript", :src => "js/bootstrap-tab.js"}
+      %script{:type => "text/javascript", :src => "js/bootstrap-tooltip.js"}
+      %script{:type => "text/javascript", :src => "js/bootstrap-popover.js"}
+      %script{:type => "text/javascript", :src => "js/bootstrap-button.js"}
+      %script{:type => "text/javascript", :src => "js/bootstrap-collapse.js"}
+      %script{:type => "text/javascript", :src => "js/bootstrap-carousel.js"}
+      %script{:type => "text/javascript", :src => "js/bootstrap-typeahead.js"}
